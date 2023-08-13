@@ -3,3 +3,59 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --dashboard: #93c5fd;
+}
+
+.main-page{
+    display: flex;
+    height: 100vw;
+}
+
+
+/* ------------------------DASHBOARD CSS--------------------------------- */
+
+
+
+.dashboard-menu{
+    background-color: var(--dashboard);
+    
+    padding: 1rem;
+}
+
+.dash-heading{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.dash-heading img{
+    width: 70px;
+}
+
+.dash-main-links ul li{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dash-second-links{
+    margin-top: 4rem;
+}
+.dash-second-links ul li{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 1rem;
+}
+
+li img{
+    width: 50px;
+    height: auto;
+}
+
+.right-hand-side{
+    flex-grow: 1;
+    background-color: red;
+}
