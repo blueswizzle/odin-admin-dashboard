@@ -7,9 +7,13 @@
     --dashboard: #93c5fd;
 }
 
+body{
+    height: 100vw;
+}
+
 .main-page{
     display: flex;
-    height: 100vw;
+    height: 100%;   
 }
 
 
@@ -19,8 +23,8 @@
 
 .dashboard-menu{
     background-color: var(--dashboard);
-    
     padding: 1rem;
+    width: 300px;
 }
 
 .dash-heading{
@@ -57,5 +61,50 @@ li img{
 
 .right-hand-side{
     flex-grow: 1;
-    background-color: red;
+    
+}
+
+.search-area{
+    display: flex;
+    padding: 1.2rem;
+    align-items: center;
+}
+.search-area img{
+    width: 40px;
+    
+}
+.search-area input{
+    border-radius: 1.25em;
+    cursor: text;
+    flex: 1;
+    font-size: 1em;
+    height: 2rem;
+    margin: 0rem 0.85rem;
+}
+
+.profile-info{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    padding: 0rem 1.2rem;
+    gap: 1.2rem;
+}
+
+.profile-info img{
+    width: 100px;
+    border-radius: 100%;
+    
+}
+.username{
+    flex: 1;
+    display: flex;
+    align-items: end;
+}
+
+.username h2{
+    margin-left: 1.1rem;
+}
+.profile-info button{
+    width: 70px;
+    
 }
