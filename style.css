@@ -1,26 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 :root{
-    --dashboard: #93c5fd;
+    --dashboard: #73bcf7;
     --border: #e7e5e4;
-
-    --gray-1: #fafaf9;
-    --gray-2: #e7e5e4;
-  --gray-3: #292524;
-  --gray-4: #1c1917;
-  --gray-m: #78716c;
-  --primary: #084c61;
-  --accent: #fa3a6d;
-  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    --primary: #efeff5;
+    --accent: #fa3a6d;
+    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
     0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 body{
     height: 100vw;
+    font-family: 'Roboto', sans-serif;
 }
 
 .main-page{
@@ -37,6 +33,8 @@ body{
     background-color: var(--dashboard);
     padding: 1rem;
     width: 300px;
+    color:white;
+    font-weight: 700;
 }
 
 .dash-heading{
@@ -54,6 +52,7 @@ body{
     list-style: none;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 0.8rem;
 }
 
 .dash-second-links{
@@ -64,16 +63,17 @@ body{
     list-style: none;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 0.8rem;
 }
 
 li img{
-    width: 50px;
+    width: 40px;
     height: auto;
 }
 
 .right-hand-side{
     flex-grow: 1;
-    background-color: var(--gray-2);
+    background-color: var(--primary);
 }
 
 .search-area{
@@ -133,6 +133,10 @@ main{
     flex-grow: 1;
 }
 
+.projects > h2{
+    margin-bottom: 1.2rem;
+} 
+
 .cards{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -142,11 +146,14 @@ main{
 .card{
     display: flex;
     flex-direction: column;
-    
+    border-left: 10px solid orange;
+    border-radius: 10px;
+    background-color: white;
+    padding: 1.3rem;
 }
 
 .desc{
-    width:50%;
+    width:100%;
 }
 
 .actions{
@@ -161,10 +168,10 @@ main{
 
 
 .announcements-and-trending{
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
     padding-right: 1.3rem;
+    margin-left: 1rem;
 }
 
 .announcements{
